@@ -1,0 +1,231 @@
+body {background-color: aliceblue; padding: 1em;}
+h1 {text-align: center; letter-spacing: 10px ; font-weight: bold; font-family: "Audiowide", sans-serif;
+    color: firebrick; cursor: pointer; }
+
+  
+    
+h1:nth-of-type(1){
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 9s;
+    animation-direction: normal;
+  }
+  @keyframes fade{
+    0% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  
+
+  
+  
+  
+  h2 {text-align: center; letter-spacing: 10px ; font-weight: bold; font-family: "Audiowide", sans-serif;
+    color:crimson; cursor: pointer;}
+    h2:nth-of-type(1){
+        animation-name: fade;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        animation-duration: 9s;
+        animation-direction: normal;
+      }
+      @keyframes fade{
+        0% {
+          opacity: 0;
+        }
+        60% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+
+.ifu {text-align: center; letter-spacing: 10px ; font-weight: bold; font-family: "Audiowide", sans-serif;
+  color: firebrick; cursor: pointer;
+
+  opacity: 0; transition: transform 2s; font-size: 2rem;
+}
+
+.ifu:hover{opacity: 1 ; transform: scale(1.2);}
+
+
+
+
+.main {display: flex; 
+
+  moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  -moz-animation-name: slidein-left;
+  -webkit-animation-name: slidein-left;
+}
+
+@-moz-keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+  
+
+.bateman{width: 50%; border: 3px aliceblue; border-radius: 20px; padding: 0px; background-color: aliceblue; display: inline-block; margin-left: 10px; margin-top: 10px; transition: transform.5s;}
+.bateman:hover {transform: scale(1.1);}
+.patrick { width: 100%; border-radius: 20px;} 
+
+
+.durden {width: 50%; border: 3px aliceblue; border-radius: 20px; padding: 0px; background-color:aliceblue; display: inline-block; margin-left: 10px; margin-top: 10px;transition: transform.5s}
+.durden:hover {transform: scale(1.1);}
+.tyler  { width: 100%; border-radius: 20px;}  
+
+.main2 {display: flex ; flex-wrap: wrap; justify-content: center;
+  moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  -moz-animation-name: slidein-left;
+  -webkit-animation-name: slidein-left;
+}
+
+@-moz-keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.batman {width: 50%; border: 3px aliceblue; border-radius: 20px; padding: 10px; background-color: aliceblue; display: inline-block; margin-left: 10px; margin-top: 10px; transition: transform.5s;} 
+.batman:hover {transform: scale(1.1);}  
+.bruce { width: 100%; border-radius: 20px;}
+
+
+
+
+* { box-sizing: border-box;}
+
+
+.background {
+  background-color: #12181B;
+  height: 100vh;
+  padding-top: 1px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10%;
+  
+}
+
+.display {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 300px;
+
+}
+
+.tile {
+  border: 1px solid white;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.playerX {
+  color: #09C372;
+}
+
+.playerO {
+  color: #498AFB;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.controls button {
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.restart {
+  background-color: #498AFB;
+}
+
+#reset {
+  background-color: #FF3860;
+}
+
+
+.twop {display:inline-block; display: flex; justify-content: center; align-items: center; margin-top: 5em;}
+.secondp {width: 100px; border: 5px; transition: transform.5s}
+.secondp:hover {transform: scale(1.1);}
+.secondpage {max-width: 100%;
+  max-height: 100%;
+  display: block; border-radius: 50px;}
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nika2.css">
+    <title>Nika</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+        </defs>
+    </svg>
+    <canvas id="canvas1"></canvas>
+    
+    <canvas id="canvas2"></canvas>
+    
+    
+      <div class="ukan">
+        <div class="ukan1">
+            <a href="./ნიკა.html"><button class="ukan2">უკან</button> </a>
+        </div>
+      </div>
+    <h1 id="header">what am i doing?</h1>
+    
+    <script src="js/classes.js"></script> 
+</body>
+</html>
